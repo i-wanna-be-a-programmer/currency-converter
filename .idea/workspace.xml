@@ -69,6 +69,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\79115\IdeaProjects\currency-converter" />
       <recent name="C:\Users\79115\IdeaProjects\CurrencyConverterGradle\src\main\java" />
     </key>
   </component>
@@ -121,6 +122,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="CurrencyConverterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="CurrencyConverter.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.CurrencyConverter.CurrencyConverterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -150,7 +158,7 @@
       <workItem from="1615324008964" duration="453000" />
       <workItem from="1615405565493" duration="1625000" />
       <workItem from="1615407274827" duration="497000" />
-      <workItem from="1615565205231" duration="343000" />
+      <workItem from="1615565205231" duration="688000" />
     </task>
     <task id="LOCAL-00001" summary="добавление файлов проекта">
       <created>1615323511928</created>
@@ -166,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615323880527</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="добавление файлов проекта">
+      <created>1615565758133</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615565758133</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
