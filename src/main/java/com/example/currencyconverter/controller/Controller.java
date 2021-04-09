@@ -17,14 +17,14 @@ public class Controller extends ParserJson {
 
     public void conversionCurrency() throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Введите валюту для конвертации: ");
+        System.out.println("Enter the currency to convert: ");
         firstValue = reader.readLine(); // ввод данных. получаем данные (вид валюты) от пользователя
         setCurrency(firstValue);//устанавливаем вид валюты для конвертации
         parser();
         value = (double) getValuteValue();//значение валюты
         valuteName = (String) getValuteName();//название валюты
         valuteNominal = (long) getValuteNominal();//номинал валюты
-        System.out.println("Номинал: " + valuteNominal + " " + valuteName);
+        System.out.println("Nominal : " + valuteNominal + " " + valuteName);
         System.out.println(value + " " + " rub.");
 
         secondValue = reader.readLine(); // получаем данные (вид валюты) от пользователя
@@ -33,10 +33,10 @@ public class Controller extends ParserJson {
         secondValueValute = (double) getValuteValue();
         secondNameValute = (String) getValuteName();
         secondNominalValute = (long) getValuteNominal();
-        System.out.println("Номинал: " + secondNominalValute + " " + secondNameValute);
+        System.out.println("Nominal : " + secondNominalValute + " " + secondNameValute);
         System.out.println(secondValueValute + " " + " rub.");
 
-        System.out.println("конец программы");
+        System.out.println("end");
 
     }
 
@@ -59,7 +59,9 @@ public class Controller extends ParserJson {
 
         this.secondValue = secondValue;
     }
+}
 
+class ControllerTest {
     public static void main(String[] args) throws Exception {
         Controller controller = new Controller();
         controller.conversionCurrency();
