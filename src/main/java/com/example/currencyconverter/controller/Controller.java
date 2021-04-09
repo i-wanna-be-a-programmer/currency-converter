@@ -8,12 +8,12 @@ import java.io.InputStreamReader;
 public class Controller extends ParserJson {
     private String firstValue;
     private String secondValue;
-    private double value;
-    private String valuteName;
-    private long valuteNominal;
-    private double secondValueValute;
-    private String secondNameValute;
-    private long secondNominalValute;
+    private double valueController;
+    private String valuteNameController;
+    private long valuteNominalController;
+    private double secondValueValuteController;
+    private String secondNameValuteController;
+    private long secondNominalValuteController;
 
     public void conversionCurrency() throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -22,20 +22,20 @@ public class Controller extends ParserJson {
         firstValue = reader.readLine(); // ввод данных. получаем данные (вид валюты) от пользователя
         setCurrency(firstValue);//устанавливаем вид валюты для конвертации
         parser();
-        value = (double) getValuteValue();//значение валюты
-        valuteName = (String) getValuteName();//название валюты
-        valuteNominal = (long) getValuteNominal();//номинал валюты
-        System.out.println("Nominal : " + valuteNominal + " " + valuteName);
-        System.out.println(value + " " + " rub.");
+        valueController = (double) getValuteValue();//значение валюты
+        valuteNameController = (String) getValuteName();//название валюты
+        valuteNominalController = (long) getValuteNominal();//номинал валюты
+        System.out.println("Nominal : " + valuteNominalController + " " + valuteNameController);
+        System.out.println(valueController + " " + " rub.");
 
         secondValue = reader.readLine(); // получаем данные (вид валюты) от пользователя
         setCurrency(secondValue);//устанавливаем вид валюты для конвертации
         parser();
-        secondValueValute = (double) getValuteValue();
-        secondNameValute = (String) getValuteName();
-        secondNominalValute = (long) getValuteNominal();
-        System.out.println("Nominal : " + secondNominalValute + " " + secondNameValute);
-        System.out.println(secondValueValute + " " + " rub.");
+        secondValueValuteController = (double) getValuteValue();
+        secondNameValuteController = (String) getValuteName();
+        secondNominalValuteController = (long) getValuteNominal();
+        System.out.println("Nominal : " + secondNominalValuteController + " " + secondNameValuteController);
+        System.out.println(secondValueValuteController + " " + " rub.");
 
         System.out.println("end");
 
@@ -59,6 +59,14 @@ public class Controller extends ParserJson {
     public void setSecondValue(String secondValue) {
 
         this.secondValue = secondValue;
+    }
+
+    public long secondNominalValuteController() {
+        return secondNominalValuteController;
+    }
+
+    public long getValuteNominalController() {
+        return valuteNominalController;
     }
 }
 

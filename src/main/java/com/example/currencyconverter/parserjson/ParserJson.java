@@ -30,7 +30,7 @@ public class ParserJson {
         valuteNominal = valuteСontent.get(nominal);//получаем номинал валюты
         valuteName = valuteСontent.get(name);//название валюты для вывода пользователю
         valuteValue = valuteСontent.get(value);//значение валюты для расчета значения конвертации
-
+        System.out.println(valuteValue);
     }
 
     public void setCurrency(String currency) {
