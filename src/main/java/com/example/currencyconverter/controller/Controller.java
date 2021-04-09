@@ -17,7 +17,8 @@ public class Controller extends ParserJson {
 
     public void conversionCurrency() throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter the currency to convert: ");
+        System.out.println("Enter the currency to convert : ");
+
         firstValue = reader.readLine(); // ввод данных. получаем данные (вид валюты) от пользователя
         setCurrency(firstValue);//устанавливаем вид валюты для конвертации
         parser();
