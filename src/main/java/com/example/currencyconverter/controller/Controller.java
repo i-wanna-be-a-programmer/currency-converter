@@ -1,6 +1,5 @@
 package com.example.currencyconverter.controller;
 
-import com.example.currencyconverter.currencyexchangerate.CurrencyExchangeRate;
 import com.example.currencyconverter.parserjson.ParserJson;
 
 import java.io.BufferedReader;
@@ -38,10 +37,16 @@ public class Controller extends ParserJson {
         secondNominalValuteController = (long) getValuteNominal();
         System.out.println("Nominal : " + secondNominalValuteController + " " + secondNameValuteController);
         System.out.println(secondValueValuteController + " " + " rub.");
-        double result = (int) (getValueController() / getSecondValueValuteController());
-        System.out.println(result);
-        System.out.println("end");
 
+
+        if (valuteNominalController == 1 && secondNominalValuteController == 1) {
+            double result = (valueController / secondValueValuteController);
+            String resultFormatted = String.format("%.2f", result);
+            System.out.println("In one " + valuteNameController + " " + resultFormatted + " " + secondNameValuteController);
+            System.out.println("end");
+        } else {
+            System.out.println("Something's wrong!");
+        }
     }
 
     public String getFirstValue() {
@@ -68,7 +73,7 @@ public class Controller extends ParserJson {
         this.valuteNameController = valuteNameController;
     }
 
-    public void setValuteNominalController(long valuteNominalController) {
+    public void setValuteNominalController(int valuteNominalController) {
         this.valuteNominalController = valuteNominalController;
     }
 
@@ -113,6 +118,7 @@ public class Controller extends ParserJson {
     }
 
     public long secondNominalValuteController() {
+
         return secondNominalValuteController;
     }
 
