@@ -20,7 +20,7 @@ public class Controller extends ParserJson {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter the currency to convert : ");
 
-        firstValue = reader.readLine(); // ввод данных. получаем данные (вид валюты) от пользователя
+        firstValue = reader.readLine(); // ввод данных. получаем данные 1 валюты (вид валюты) от пользователя
         setCurrency(firstValue);//устанавливаем вид валюты для конвертации
         parser();
         valueController = (double) getValuteValue();//значение валюты
@@ -29,7 +29,7 @@ public class Controller extends ParserJson {
         System.out.println("Nominal : " + valuteNominalController + " " + valuteNameController);
         System.out.println(valueController + " " + " rub.");
 
-        secondValue = reader.readLine(); // получаем данные (вид валюты) от пользователя
+        secondValue = reader.readLine(); // получаем данные 2 валюты (вид валюты) от пользователя
         setCurrency(secondValue);//устанавливаем вид валюты для конвертации
         parser();
         secondValueValuteController = (double) getValuteValue();
@@ -38,19 +38,28 @@ public class Controller extends ParserJson {
         System.out.println("Nominal : " + secondNominalValuteController + " " + secondNameValuteController);
         System.out.println(secondValueValuteController + " " + " rub.");
 
-
+        //вычисляем значние курса по отношению одной валюты к другой
+        //1. если наминалы обеих валют равны 1
         if (valuteNominalController == 1 && secondNominalValuteController == 1) {
-            double result = (valueController / secondValueValuteController);
+            double result = valueController / secondValueValuteController;
             String resultFormatted = String.format("%.2f", result);
             System.out.println("In one " + valuteNameController + " " + resultFormatted + " " + secondNameValuteController);
             System.out.println("end");
+            //2. если наминал обеих валют > 1, приводим к значению 1
         } else if (valuteNominalController > 1 && secondNominalValuteController > 1) {
+            double resultNominal = (valueController / valuteNominalController) / (secondValueValuteController / secondNominalValuteController);
+            String resultFormattedNominal = String.format("%.2f", resultNominal);
+            System.out.println("In one " + valuteNameController + " " + resultFormattedNominal + " " + secondNameValuteController);
+            System.out.println("end");
+            //3. если номинал 1 валюты больше 1
+        } else if (valuteNominalController > 1 && secondNominalValuteController == 1) {
 
 
-        } else if (secondNominalValuteController > 1) {
+            //4. если номинал 2 валюты больше 1
+        } else if (valuteNominalController == 1 && secondNominalValuteController > 1) {
 
-        } else if (valuteNominalController > 1) {
 
+            //если что то пошло не так))
         } else {
             System.out.println("Something's wrong!");
         }

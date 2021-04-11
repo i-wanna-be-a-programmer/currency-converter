@@ -9,19 +9,6 @@ public class CurrencyExchangeRate extends Controller {
         Controller controller = new Controller();
         controller.conversionCurrency();
 
-
-//        currencyExchangeRate.rate();
-
     }
 
-//    public void rate() {
-//        if (getValuteNominalController() == 1) {
-//            double result = getValueController() * 1.0 / getSecondValueValuteController();
-//            System.out.println(result);
-//        } else {
-//            System.out.println("Something's wrong!");
-//        }
-//
-//
-//    }
 }
