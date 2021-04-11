@@ -77,22 +77,27 @@ public class Controller extends ParserJson {
 
 
     public String getFirstValue() {
+
         return firstValue;
     }
 
     public void setFirstValue(String firstValue) {
+
         this.firstValue = firstValue;
     }
 
     public double getValueController() {
+
         return valueController;
     }
 
     public void setValueController(double valueController) {
+
         this.valueController = valueController;
     }
 
     public String getValuteNameController() {
+
         return valuteNameController;
     }
 
@@ -105,6 +110,7 @@ public class Controller extends ParserJson {
     }
 
     public double getSecondValueValuteController() {
+
         return secondValueValuteController;
     }
 
@@ -113,6 +119,7 @@ public class Controller extends ParserJson {
     }
 
     public String getSecondNameValuteController() {
+
         return secondNameValuteController;
     }
 
@@ -121,6 +128,7 @@ public class Controller extends ParserJson {
     }
 
     public long getSecondNominalValuteController() {
+
         return secondNominalValuteController;
     }
 
@@ -133,14 +141,17 @@ public class Controller extends ParserJson {
     }
 
     public void setFirsValue(String firsValue) {
+
         this.firstValue = firsValue;
     }
 
     public String getSecondValue() {
+
         return secondValue;
     }
 
     public void setSecondValue(String secondValue) {
+
         this.secondValue = secondValue;
     }
 
@@ -150,6 +161,7 @@ public class Controller extends ParserJson {
     }
 
     public long getValuteNominalController() {
+
         return valuteNominalController;
     }
 }
