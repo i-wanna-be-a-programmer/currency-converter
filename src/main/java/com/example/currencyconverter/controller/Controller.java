@@ -44,6 +44,13 @@ public class Controller extends ParserJson {
             String resultFormatted = String.format("%.2f", result);
             System.out.println("In one " + valuteNameController + " " + resultFormatted + " " + secondNameValuteController);
             System.out.println("end");
+        } else if (valuteNominalController > 1 && secondNominalValuteController > 1) {
+
+
+        } else if (secondNominalValuteController > 1) {
+
+        } else if (valuteNominalController > 1) {
+
         } else {
             System.out.println("Something's wrong!");
         }
