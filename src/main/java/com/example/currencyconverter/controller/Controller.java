@@ -5,7 +5,7 @@ import com.example.currencyconverter.parserjson.ParserJson;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-// оставить этот класс только для запуска приложения, логику убрать?
+
 public class Controller extends ParserJson {
     private String firstValue;
     private String secondValue;
@@ -71,7 +71,7 @@ public class Controller extends ParserJson {
 
     //formatted  double resultNominal
     public String resultFormat(double result) {
-        String resultFormatted = String.format("%.2f", result);
+        String resultFormatted = String.format("%.5f", result);
         return resultFormatted;
     }
 
