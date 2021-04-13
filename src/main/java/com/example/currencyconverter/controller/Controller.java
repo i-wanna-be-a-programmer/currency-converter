@@ -5,7 +5,7 @@ import com.example.currencyconverter.parserjson.ParserJson;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-
+//переместить  в пакет Service
 public class Controller extends ParserJson {
     private String firstValue;
     private String secondValue;
@@ -18,7 +18,7 @@ public class Controller extends ParserJson {
 
     public void conversionCurrency() throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter the currency to convert : ");
+        System.out.println("Enter the currency to convert: ");
 
         firstValue = reader.readLine(); // ввод данных. получаем данные 1 валюты (вид валюты) от пользователя
         setCurrency(firstValue);//устанавливаем вид валюты для конвертации

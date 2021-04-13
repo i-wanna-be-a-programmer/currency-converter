@@ -1,11 +1,12 @@
 package com.example.currencyconverter.parserjson;
 
-
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import java.io.InputStream;
 import java.net.URL;
+
+//переместить  в пакет Service
 
 public class ParserJson {
     private String currency;
