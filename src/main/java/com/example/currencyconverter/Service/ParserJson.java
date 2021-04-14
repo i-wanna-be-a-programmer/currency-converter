@@ -1,12 +1,13 @@
-package com.example.currencyconverter.parserjson;
+package com.example.currencyconverter.Service;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import java.io.InputStream;
 import java.net.URL;
 
-//переместить  в пакет Service
 
 public class ParserJson {
     private String currency;

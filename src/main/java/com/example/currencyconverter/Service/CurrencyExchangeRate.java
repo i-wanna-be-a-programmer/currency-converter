@@ -1,6 +1,4 @@
-package com.example.currencyconverter.currencyexchangerate;
-
-import com.example.currencyconverter.controller.Controller;
+package com.example.currencyconverter.Service;
 
 public class CurrencyExchangeRate extends Controller {
 
