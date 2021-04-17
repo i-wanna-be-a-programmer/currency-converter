@@ -1,8 +1,5 @@
 package com.example.currencyconverter.Service;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
