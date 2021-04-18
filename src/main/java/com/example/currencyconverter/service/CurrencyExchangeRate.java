@@ -1,4 +1,4 @@
-package com.example.currencyconverter.Service;
+package com.example.currencyconverter.service;
 
 public class CurrencyExchangeRate extends Controller {
 

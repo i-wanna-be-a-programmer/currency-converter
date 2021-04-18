@@ -1,4 +1,4 @@
-package com.example.currencyconverter.Service;
+package com.example.currencyconverter.service;
 
 
 import org.json.simple.JSONObject;

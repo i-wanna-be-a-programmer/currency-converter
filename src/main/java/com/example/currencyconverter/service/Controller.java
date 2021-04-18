@@ -1,4 +1,4 @@
-package com.example.currencyconverter.Service;
+package com.example.currencyconverter.service;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -69,7 +69,7 @@ public class Controller extends ParserJson {
 
     //formatted  double resultNominal
     public String resultFormat(double result) {
-        String resultFormatted = String.format("%.3f", result);
+        String resultFormatted = String.format("%.5f", result);
         return resultFormatted;
     }
 
@@ -163,11 +163,3 @@ public class Controller extends ParserJson {
         return valuteNominalController;
     }
 }
-
-//class ControllerTest {
-//    public static void main(String[] args) throws Exception {
-//        Controller controller = new Controller();
-//        controller.conversionCurrency();
-//    }
-//}
-

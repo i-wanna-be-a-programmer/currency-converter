@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Currency Converter</title>
     <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384=1ZN37fSQGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" th:href="css/style.css">
 </head>
 <body>
 <div class="container">
@@ -52,7 +52,7 @@
             <span class="close">&times;</span>
         </li>
     </ul>
-    <button class="add-currency-btn"><i class="fas fa-long-arrow-alt-left"></i> Add Currency</button>
+    <button class="add-currency-btn" ><i class="fas fa-long-arrow-alt-left"></i> Add Currency</button>
     <ul class="add-currency-list">
         <li data-currency="USD" class="disabled"><img src="https://img.geonames.org/flags/x/us.gif" class="flag"><span>USD - US Dollar</span></li>
         <li data-currency="GBP"><img src="https://img.geonames.org/flags/x/gb.gif" class="flag"><span>GBP - British Pound</span></li>
