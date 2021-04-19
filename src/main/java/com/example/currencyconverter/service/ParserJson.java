@@ -1,6 +1,7 @@
 package com.example.currencyconverter.service;
 
 
+import lombok.Getter;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
@@ -9,7 +10,8 @@ import java.net.URL;
 
 
 public class ParserJson {
-   private String currency;
+
+    private String currency;
     private final String name = "Name";
     private final String value = "Value";
     private final String valute = "Valute";
